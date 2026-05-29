@@ -1,15 +1,19 @@
 {
+  "generatedBy": "generate_locations.py",
   "locations": [
     {
       "name": "College Canteen",
-      "images": []
-    },
-    {
-      "name": "Main Cafe",
+      "slug": "college-canteen",
       "images": []
     },
     {
       "name": "Juice Corner",
+      "slug": "juice-corner",
+      "images": []
+    },
+    {
+      "name": "Main Cafe",
+      "slug": "main-cafe",
       "images": []
     }
   ]

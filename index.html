@@ -1,25 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Bhojana Compendium</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhojana Compendium</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Bhojana Compendium</h1>
+  <header class="site-header">
+    <h1 class="site-title">Bhojana Compendium</h1>
+    <p class="site-subtitle">A curated archive of food photographs from selected locations—not reviews, just preservation.</p>
+  </header>
 
-    <input
-        type="text"
+  <main class="site-main">
+    <section class="search-section" aria-label="Search locations">
+      <label class="search-label" for="search">Search locations</label>
+      <input
+        type="search"
         id="search"
+        class="search-input"
         placeholder="Search for a location..."
-    >
+        autocomplete="off"
+        spellcheck="false"
+      >
+    </section>
 
-    <div id="locations"></div>
+    <section class="locations-section" aria-label="Locations">
+      <h2 class="section-heading visually-hidden">Locations</h2>
+      <div id="locations" class="locations-list" role="list"></div>
+      <p id="locations-message" class="locations-message" hidden></p>
+    </section>
 
-    <hr>
+    <section class="gallery-section" aria-label="Image gallery">
+      <div id="gallery" class="gallery">
+        <p class="gallery-placeholder">Select a location to view its archive.</p>
+      </div>
+    </section>
+  </main>
 
-    <div id="gallery">
-        Select a location.
-    </div>
+  <footer class="site-footer">
+    <p>Bhojana Compendium — food archive</p>
+  </footer>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
